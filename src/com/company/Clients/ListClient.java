@@ -7,4 +7,8 @@ public class ListClient extends Client{
     String getBaseUrl() {
         return Constants.LIST_SERVICE_BASE_URL;
     }
+
+    public static String getStaticBaseUrl () {
+        return new ListClient().getBaseUrl();
+    }
 }

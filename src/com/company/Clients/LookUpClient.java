@@ -7,4 +7,8 @@ public class LookUpClient extends Client {
     String getBaseUrl() {
         return Constants.LOOKUP_SERVICE_BASE_URL;
     }
+
+    public static String getStaticBaseUrl () {
+        return new LookUpClient().getBaseUrl();
+    }
 }

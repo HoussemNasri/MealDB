@@ -7,4 +7,8 @@ public class FilterClient extends Client {
     String getBaseUrl() {
         return Constants.FILTER_SERVICE_BASE_URL;
     }
+    
+    public static String getStaticBaseUrl () {
+        return new FilterClient().getBaseUrl();
+    }
 }

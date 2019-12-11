@@ -7,4 +7,8 @@ public class RandomClient extends Client {
     String getBaseUrl() {
         return Constants.RANDOM_SERVICE_BASE_URL;
     }
+
+    public static String getStaticBaseUrl () {
+        return new RandomClient().getBaseUrl();
+    }
 }
